@@ -1,12 +1,12 @@
 const UrgencySection = () => {
   return (
     <section className="py-24 px-6 bg-secondary/30">
-      <div className="container mx-auto max-w-4xl text-center space-y-8">
-        <h2 className="text-3xl md:text-5xl font-black tracking-tight">
+      <div className="container mx-auto max-w-4xl space-y-8">
+        <h2 className="text-3xl md:text-5xl font-black tracking-tight text-center">
           OU VOCÊ APRENDE ISSO AGORA{" "}
           <span className="text-accent">OU VAI FICAR MUITO PRA TRÁS</span>
         </h2>
-        <div className="space-y-4 text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto">
+        <div className="space-y-4 text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto text-left">
           <p>Isso não é uma tendência. <strong className="text-foreground">É uma realidade.</strong></p>
           <p>
             A inteligência artificial já está mudando a forma como os negócios crescem, e quem não acompanha… fica muito para trás.
@@ -19,7 +19,7 @@ const UrgencySection = () => {
         <div className="section-divider mt-16" />
 
         <div className="pt-12 space-y-8">
-          <h2 className="text-3xl md:text-4xl font-black tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-black tracking-tight text-center">
             VOCÊ VAI VER DIANTE DOS SEUS OLHOS{" "}
             <span className="text-gradient">O QUE É REALMENTE POSSÍVEL</span>
           </h2>

@@ -10,24 +10,14 @@ const SpeakerSection = () => {
         </h2>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Images */}
           <div className="grid grid-cols-2 gap-4">
-            <img
-              src={speakerSmile}
-              alt="Edânio Costa"
-              className="rounded-xl w-full h-72 object-cover object-top shadow-lg"
-            />
-            <img
-              src={speakerStage}
-              alt="Edânio Costa no palco"
-              className="rounded-xl w-full h-72 object-cover object-top shadow-lg"
-            />
+            <img src={speakerSmile} alt="Edânio Costa" className="rounded-xl w-full h-72 object-cover object-top shadow-lg" />
+            <img src={speakerStage} alt="Edânio Costa no palco" className="rounded-xl w-full h-72 object-cover object-top shadow-lg" />
           </div>
 
-          {/* Bio */}
           <div className="space-y-6">
             <h3 className="text-3xl md:text-4xl font-black">Edânio Costa</h3>
-            <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
+            <div className="space-y-4 text-muted-foreground text-lg leading-relaxed text-left">
               <p>
                 Edânio Costa veio do marketing digital e já faturou diversas vezes mais de{" "}
                 <strong className="text-foreground">um milhão de reais em sete dias</strong> com estratégias digitais.
