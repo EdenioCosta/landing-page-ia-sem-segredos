@@ -15,6 +15,7 @@ const Index = () => {
       <UrgencySection />
       <ForYouSection />
       <SpeakerSection />
+      <TestimonialsSection />
       <ReasonsSection />
       <CTASection />
     </main>
