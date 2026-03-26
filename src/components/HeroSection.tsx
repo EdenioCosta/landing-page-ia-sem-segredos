@@ -23,9 +23,8 @@ const HeroSection = () => {
         {/* Headline */}
         <div className="px-6 max-w-3xl space-y-5">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.08] tracking-tight uppercase">
-            COMO UTILIZAR A{" "}
-            <span className="text-gradient">INTELIGÊNCIA ARTIFICIAL</span>{" "}
-            PARA VENDER MAIS E FAZER SEU NEGÓCIO CRESCER
+            DESCUBRA COMO ATRAIR MAIS CLIENTES E CRESCER SEU NEGÓCIO COM A{" "}
+            <span className="text-gradient">INTELIGÊNCIA ARTIFICIAL</span>
           </h1>
           <p className="text-muted-foreground text-base md:text-lg">
             Para profissionais liberais, pequenos e médios empresários.
