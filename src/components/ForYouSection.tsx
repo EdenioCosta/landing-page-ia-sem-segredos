@@ -1,0 +1,47 @@
+const forYouItems = [
+  "É PARA VOCÊ QUE É UM PROFISSIONAL LIBERAL OU PEQUENO EMPRESÁRIO",
+  "É PARA VOCÊ QUE GOSTARIA DE APRENDER COMO USAR A IA NO SEU NEGÓCIO",
+  "É PARA VOCÊ QUE GOSTARIA DE TER ALGUÉM ATENDENDO O SEU WHATSAPP",
+  "É PARA VOCÊ QUE GOSTARIA DE TER UM VENDEDOR TRABALHANDO 24 HORAS POR DIA",
+  "É PARA VOCÊ QUE PRECISA DE IDEIAS PARA AUMENTAR SUAS VENDAS",
+  "É PARA VOCÊ QUE PRECISA MELHORAR SUAS REDES SOCIAIS",
+  "É PARA VOCÊ QUE PRECISA DE MAIS CLIENTES",
+  "É PARA VOCÊ QUE SE SENTE SOBRECARREGADO",
+  "É PARA VOCÊ QUE QUER TER MAIS TEMPO E MAIS ESTRUTURA",
+  "É PARA VOCÊ QUE SENTE QUE PODERIA CRESCER MAIS, MAS NÃO SABE COMO",
+  "É PARA VOCÊ QUE QUER FAZER SEU NEGÓCIO FUNCIONAR MELHOR",
+];
+
+const ForYouSection = () => {
+  return (
+    <section className="py-24 px-6">
+      <div className="container mx-auto max-w-4xl space-y-12">
+        <div className="text-center space-y-6">
+          <h2 className="text-3xl md:text-5xl font-black tracking-tight">
+            ESSA PALESTRA É <span className="text-gradient">PARA VOCÊ</span> QUE
+          </h2>
+          <p className="text-muted-foreground text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
+            É psicólogo, médico, advogado, dentista, fisioterapeuta, nutricionista, personal trainer, coach, terapeuta, massagista, esteticista, quiropraxista, consultor, contador, corretor de imóveis, corretor de seguros, arquiteto, designer, social media, gestor de tráfego, copywriter, fotógrafo, videomaker, engenheiro, professor, palestrante, mentor, prestador de serviços em geral.
+          </p>
+          <p className="text-muted-foreground text-base md:text-lg">
+            Ou é lojista, pequeno ou médio empresário, dono de negócio local ou digital.
+          </p>
+        </div>
+
+        <div className="space-y-3">
+          {forYouItems.map((item, i) => (
+            <div
+              key={i}
+              className="flex items-center gap-4 p-4 rounded-lg border border-border/50 bg-secondary/30 hover:border-primary/40 transition-colors duration-300"
+            >
+              <span className="text-primary text-xl font-bold shrink-0">✓</span>
+              <span className="text-foreground font-semibold text-sm md:text-base">{item}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ForYouSection;
