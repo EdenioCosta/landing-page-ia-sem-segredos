@@ -1,4 +1,4 @@
-import speakerImg from "@/assets/speaker-portrait.jpeg";
+import speakerHero from "@/assets/speaker-hero.png";
 
 const HeroSection = () => {
   return (
@@ -12,16 +12,22 @@ const HeroSection = () => {
         backgroundSize: '50px 50px'
       }} />
 
-      <div className="relative z-10 flex flex-col items-center text-center flex-1 w-full">
-        {/* Tag */}
-        <div className="mt-10 md:mt-16 mb-6">
-          <span className="inline-block px-6 py-2 rounded-full border border-primary/40 text-primary text-sm font-semibold tracking-[0.2em] uppercase">
-            IA PARA NEGÓCIOS
-          </span>
+      <div className="relative z-10 flex flex-col items-center text-center w-full">
+        {/* Speaker image - on top, large and integrated */}
+        <div className="relative w-full flex justify-center pt-6">
+          <img
+            src={speakerHero}
+            alt="Edânio Costa - Especialista em Inteligência Artificial"
+            className="relative w-[320px] md:w-[450px] lg:w-[520px] max-w-full object-cover object-top"
+            style={{
+              maskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)',
+              WebkitMaskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)',
+            }}
+          />
         </div>
 
-        {/* Headline */}
-        <div className="px-6 max-w-3xl space-y-5">
+        {/* Headline - overlapping slightly with the photo bottom */}
+        <div className="px-6 max-w-3xl space-y-5 -mt-16 md:-mt-24">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.08] tracking-tight uppercase">
             DESCUBRA COMO ATRAIR MAIS CLIENTES E CRESCER SEU NEGÓCIO COM A{" "}
             <span className="text-gradient">INTELIGÊNCIA ARTIFICIAL</span>
@@ -31,8 +37,8 @@ const HeroSection = () => {
           </p>
         </div>
 
-        {/* CTA - green, not red */}
-        <div className="mt-8">
+        {/* CTA */}
+        <div className="mt-8 mb-16">
           <a
             href="#garanta-sua-vaga"
             className="inline-block px-12 py-4 rounded-lg font-bold text-lg text-primary-foreground transition-all duration-300 hover:scale-105 glow-border"
@@ -40,22 +46,6 @@ const HeroSection = () => {
           >
             Garantir minha vaga
           </a>
-        </div>
-
-        {/* Speaker image - large, full width */}
-        <div className="mt-8 relative w-full flex justify-center flex-1 items-end">
-          <div className="absolute bottom-0 w-[500px] h-[500px] rounded-full opacity-15" style={{
-            background: 'radial-gradient(circle, hsl(220 30% 25%), transparent 70%)'
-          }} />
-          <img
-            src={speakerImg}
-            alt="Edânio Costa - Especialista em Inteligência Artificial"
-            className="relative w-80 md:w-[420px] lg:w-[500px] max-w-full object-cover object-top"
-            style={{
-              maskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)',
-              WebkitMaskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)',
-            }}
-          />
         </div>
       </div>
     </section>
