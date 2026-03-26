@@ -16,14 +16,14 @@ const ForYouSection = () => {
   return (
     <section className="py-24 px-6">
       <div className="container mx-auto max-w-4xl space-y-12">
-        <div className="text-center space-y-6">
-          <h2 className="text-3xl md:text-5xl font-black tracking-tight">
+        <div className="space-y-6">
+          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-center">
             ESSA PALESTRA É <span className="text-gradient">PARA VOCÊ</span> QUE
           </h2>
-          <p className="text-muted-foreground text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
+          <p className="text-muted-foreground text-base md:text-lg max-w-3xl mx-auto leading-relaxed text-left">
             É psicólogo, médico, advogado, dentista, fisioterapeuta, nutricionista, personal trainer, coach, terapeuta, massagista, esteticista, quiropraxista, consultor, contador, corretor de imóveis, corretor de seguros, arquiteto, designer, social media, gestor de tráfego, copywriter, fotógrafo, videomaker, engenheiro, professor, palestrante, mentor, prestador de serviços em geral.
           </p>
-          <p className="text-muted-foreground text-base md:text-lg">
+          <p className="text-muted-foreground text-base md:text-lg text-left max-w-3xl mx-auto">
             Ou é lojista, pequeno ou médio empresário, dono de negócio local ou digital.
           </p>
         </div>
@@ -35,7 +35,7 @@ const ForYouSection = () => {
               className="flex items-center gap-4 p-4 rounded-lg border border-border/50 bg-secondary/30 hover:border-primary/40 transition-colors duration-300"
             >
               <span className="text-primary text-xl font-bold shrink-0">✓</span>
-              <span className="text-foreground font-semibold text-sm md:text-base">{item}</span>
+              <span className="text-foreground font-semibold text-sm md:text-base text-left">{item}</span>
             </div>
           ))}
         </div>
