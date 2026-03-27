@@ -62,25 +62,24 @@ const HeroSection = () => {
           </p>
         </div>
 
-        {/* Event info */}
-        <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm md:text-base text-muted-foreground px-6">
-          <span className="flex items-center gap-2">
-            📍 Barra da Tijuca, Rio de Janeiro
-          </span>
-          <span className="flex items-center gap-2">
-            🕢 19:30 às 22:00
-          </span>
-        </div>
-
         {/* Registration form */}
         <div className="mt-8 mb-16 w-full max-w-md px-6">
           <div className="bg-card/80 border border-border rounded-2xl p-6 md:p-8 backdrop-blur-sm">
             <h3 className="text-xl md:text-2xl font-black mb-1 uppercase tracking-tight">
-              Palestra <span className="text-gradient">Gratuita</span>
+              Workshop <span className="text-gradient">Gratuito</span>
             </h3>
-            <p className="text-muted-foreground text-sm mb-6">
+            <p className="text-muted-foreground text-sm mb-4">
               Faça sua inscrição agora
             </p>
+
+            <div className="flex flex-col gap-2 mb-6 text-base md:text-lg text-foreground/90">
+              <span className="flex items-center gap-2">
+                📍 Barra da Tijuca, Rio de Janeiro
+              </span>
+              <span className="flex items-center gap-2">
+                🕢 19:30 às 22:00
+              </span>
+            </div>
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <Input
