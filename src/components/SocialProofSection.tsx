@@ -4,7 +4,7 @@ import eventAudience2 from "@/assets/event-audience-2.jpeg";
 import eventSpeaker2 from "@/assets/event-speaker-2.jpeg";
 
 const SocialProofSection = () => {
-  const cities = ["Rio de Janeiro", "São Paulo", "Brasília", "BH"];
+  const cities = ["Rio de Janeiro", "Belo Horizonte", "Brasília", "Goiás"];
 
   return (
     <section className="py-16 px-6 relative overflow-hidden">
@@ -32,7 +32,7 @@ const SocialProofSection = () => {
           <h3 className="text-2xl md:text-3xl font-black tracking-tight text-center uppercase">
             Agenda
           </h3>
-          <div className="grid grid-cols-2 gap-3">
+          <div className="flex flex-col gap-3">
             {cities.map((city) => (
               <div
                 key={city}
