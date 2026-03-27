@@ -23,21 +23,20 @@ const ProblemSection = () => {
         {/* Block 2 */}
         <div className="space-y-8">
           <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-tight text-center">
-            A IA NÃO É SÓ UMA FERRAMENTA.{" "}
-            <span className="text-gradient">É UM JEITO NOVO DE CONDUZIR O SEU NEGÓCIO</span>
+            MAS AFINAL, O QUE A INTELIGÊNCIA ARTIFICIAL{" "}
+            <span className="text-gradient">PODE FAZER POR VOCÊ?</span>
           </h2>
-          <p className="text-muted-foreground text-lg text-left max-w-2xl mx-auto">
-            A IA pode assumir funções que hoje consomem seu tempo e sua atenção.
-          </p>
           <div className="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto text-left">
             {[
-              "Pode organizar seu dia",
-              "Pode fazer tarefas para você",
-              "Pode estruturar seu marketing",
-              "Pode ser seu conselheiro",
-              "Pode ser seu consultor de vendas",
-              "Pode ser o seu próprio vendedor",
+              "Te ajuda a vender mais",
+              "Te ajuda a atrair mais clientes",
               "Pode cuidar das suas redes sociais",
+              "Pode fazer um site pra você",
+              "Pode ser seu conselheiro",
+              "Pode cuidar do seu marketing",
+              "Pode ser seu secretário",
+              "Pode ser seu vendedor",
+              "E muito mais…",
             ].map((item) => (
               <div key={item} className="flex items-start gap-3 p-3 rounded-lg bg-secondary/50">
                 <span className="text-primary mt-0.5">✦</span>
@@ -45,9 +44,6 @@ const ProblemSection = () => {
               </div>
             ))}
           </div>
-          <p className="text-muted-foreground text-lg italic max-w-xl mx-auto text-left">
-            Não é sobre tecnologia. É sobre como você passa a conduzir o seu negócio a partir disso.
-          </p>
         </div>
       </div>
     </section>
