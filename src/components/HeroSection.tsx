@@ -49,7 +49,7 @@ const HeroSection = () => {
         <div className="relative w-full flex justify-center">
           <img
             src={speakerHero}
-            alt="Edânio Costa - Especialista em Inteligência Artificial"
+            alt="Edenio Costa - Especialista em Inteligência Artificial"
             className="relative w-[320px] md:w-[450px] lg:w-[520px] max-w-full object-cover object-top"
             style={{
               maskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)',
