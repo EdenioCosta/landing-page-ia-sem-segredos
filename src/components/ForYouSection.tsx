@@ -18,8 +18,11 @@ const ForYouSection = () => {
       <div className="container mx-auto max-w-4xl space-y-12">
         <div className="space-y-6">
           <h2 className="text-3xl md:text-5xl font-black tracking-tight text-center">
-            ESSA PALESTRA É <span className="text-gradient">PARA VOCÊ</span> QUE
+            <span className="text-gradient">PARA QUEM É</span>
           </h2>
+          <p className="text-foreground text-xl md:text-2xl font-bold text-left max-w-3xl mx-auto">
+            Profissionais liberais, pequenos e médios empresários
+          </p>
           <p className="text-muted-foreground text-base md:text-lg max-w-3xl mx-auto leading-relaxed text-left">
             É psicólogo, médico, advogado, dentista, fisioterapeuta, nutricionista, personal trainer, coach, terapeuta, massagista, esteticista, quiropraxista, consultor, contador, corretor de imóveis, corretor de seguros, arquiteto, designer, social media, gestor de tráfego, copywriter, fotógrafo, videomaker, engenheiro, professor, palestrante, mentor, prestador de serviços em geral.
           </p>
