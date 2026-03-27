@@ -36,7 +36,7 @@ const ProblemSection = () => {
               "Pode ser sua melhor secretária",
               "Pode criar todo um plano de crescimento da sua empresa em detalhes",
               "Pode criar toda uma estratégia de marketing pra você, mesmo que você seja pequeno ainda",
-              "Pode montar todo o seu plano de crescimento",
+              
               "Pode executar tudo isso para você — fazer o trabalho braçal mesmo",
               "E muito mais…",
             ].map((item) => (

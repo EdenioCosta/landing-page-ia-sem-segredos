@@ -22,6 +22,10 @@ const CTASection = () => {
         <div className="max-w-md mx-auto">
           <RegistrationForm />
         </div>
+
+        <p className="text-muted-foreground text-base md:text-lg max-w-xl mx-auto mt-6">
+          <span className="text-foreground font-bold">Atenção:</span> por ser um workshop gratuito, as vagas esgotam muito rápido e são muito concorridas. Então não deixe pra depois.
+        </p>
       </div>
     </section>
   );
