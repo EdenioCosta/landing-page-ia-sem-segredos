@@ -5,16 +5,16 @@ const ProblemSection = () => {
         {/* Block 1 */}
         <div className="space-y-6">
           <h2 className="text-3xl md:text-5xl font-black tracking-tight text-center">
-            A INTELIGÊNCIA ARTIFICIAL <span className="text-gradient">MUDOU O JOGO</span>
+            CHEGA DE CONFUSÃO, APRENDA DE FORMA{" "}
+            <span className="text-gradient">SIMPLES E FÁCIL</span>
           </h2>
-          <div className="space-y-4 text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto text-left">
-            <p>As informações estão por todos os lados.</p>
-            <p>Mas chegam de forma <strong className="text-foreground">confusa.</strong></p>
-            <p>E por isso, a maioria das pessoas não consegue entender como utilizar de verdade no seu negócio.</p>
-            <p className="text-foreground font-semibold pt-4">
-              É exatamente por isso que, nessa palestra, você vai entender como usar a inteligência artificial de forma simples, eficaz e objetiva.
+          <div className="space-y-4 text-foreground text-lg md:text-xl max-w-2xl mx-auto text-left">
+            <p>
+              As informações estão por todos os lados, mas chegam de forma confusa. E por isso, a maioria das pessoas não consegue entender como utilizar de verdade no seu negócio.
             </p>
-            <p className="text-primary font-bold text-2xl pt-2">Sem enrolação.</p>
+            <p>
+              É exatamente por isso que, nesse workshop, você vai entender como usar a inteligência artificial de forma simples, eficaz e objetiva. Sem enrolação.
+            </p>
           </div>
         </div>
 
