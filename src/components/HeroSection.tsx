@@ -38,8 +38,15 @@ const HeroSection = () => {
       }} />
 
       <div className="relative z-10 flex flex-col items-center text-center w-full">
+        {/* Workshop badge top */}
+        <div className="pt-8 pb-2">
+          <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight">
+            Workshop <span className="text-gradient">Gratuito</span>
+          </h2>
+        </div>
+
         {/* Speaker image */}
-        <div className="relative w-full flex justify-center pt-6">
+        <div className="relative w-full flex justify-center">
           <img
             src={speakerHero}
             alt="Edânio Costa - Especialista em Inteligência Artificial"
@@ -65,8 +72,10 @@ const HeroSection = () => {
         {/* Registration form */}
         <div className="mt-8 mb-16 w-full max-w-md px-6">
           <div className="bg-card/80 border border-border rounded-2xl p-6 md:p-8 backdrop-blur-sm">
-            <h3 className="text-xl md:text-2xl font-black mb-1 uppercase tracking-tight">
-              Workshop <span className="text-gradient">Gratuito</span>
+            <h3 className="text-2xl md:text-3xl font-black mb-1 uppercase tracking-tight leading-tight">
+              Workshop{" "}
+              <br />
+              <span className="text-gradient">Gratuito</span>
             </h3>
             <p className="text-muted-foreground text-sm mb-4">
               Faça sua inscrição agora
@@ -108,7 +117,7 @@ const HeroSection = () => {
                 className="w-full h-12 font-black text-base uppercase tracking-wide text-primary-foreground glow-border"
                 style={{ backgroundImage: 'var(--gradient-glow)' }}
               >
-                {loading ? "Enviando..." : "GARANTIR MINHA VAGA"}
+                {loading ? "Enviando..." : "FAZER INSCRIÇÃO GRATUITA"}
               </Button>
             </form>
           </div>
