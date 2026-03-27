@@ -1,3 +1,5 @@
+import RegistrationForm from "@/components/RegistrationForm";
+
 const CTASection = () => {
   return (
     <section id="garanta-sua-vaga" className="py-24 px-6 relative overflow-hidden">
@@ -16,13 +18,10 @@ const CTASection = () => {
         <p className="text-accent font-bold text-xl">
           ou veja outros avançarem enquanto você fica para trás.
         </p>
-        <a
-          href="#"
-          className="inline-block px-14 py-5 rounded-lg font-black text-xl text-primary-foreground transition-all duration-300 hover:scale-105 glow-border"
-          style={{ backgroundImage: 'var(--gradient-glow)' }}
-        >
-          FAZER INSCRIÇÃO
-        </a>
+
+        <div className="max-w-md mx-auto">
+          <RegistrationForm />
+        </div>
       </div>
     </section>
   );
