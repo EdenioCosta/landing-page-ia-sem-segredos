@@ -3,7 +3,7 @@ const reasons = [
   { title: "É um treinamento pensado para quem não tem tempo a perder", desc: "Sem linguagem técnica, sem complicação" },
   { title: "Você vai entender como aplicar isso no seu negócio de verdade", desc: "Não é teoria, é uso prático" },
   { title: "Você vai enxergar novas possibilidades de crescimento", desc: "E perceber que está mais próximo do que imagina" },
-  { title: "Você pode sair dessa palestra com uma nova forma de trabalhar", desc: "Mais leve, mais eficiente e com mais resultado" },
+  { title: "Você pode sair desse workshop com uma nova forma de trabalhar", desc: "Mais leve, mais eficiente e com mais resultado" },
 ];
 
 const ReasonsSection = () => {
@@ -12,7 +12,7 @@ const ReasonsSection = () => {
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-3xl md:text-5xl font-black tracking-tight text-center mb-16">
           5 MOTIVOS PARA VOCÊ{" "}
-          <span className="text-gradient">PARTICIPAR DESSA PALESTRA</span>
+          <span className="text-gradient">PARTICIPAR DESSE WORKSHOP</span>
         </h2>
 
         <div className="space-y-6">
