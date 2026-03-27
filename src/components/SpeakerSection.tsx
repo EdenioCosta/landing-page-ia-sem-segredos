@@ -17,13 +17,12 @@ const SpeakerSection = () => {
 
           <div className="space-y-6">
             <h3 className="text-3xl md:text-4xl font-black">Edânio Costa</h3>
-            <div className="space-y-4 text-muted-foreground text-lg leading-relaxed text-left">
+            <div className="space-y-4 text-foreground text-lg leading-relaxed text-left">
               <p>
-                Edânio Costa veio do marketing digital e já faturou diversas vezes mais de{" "}
-                <strong className="text-foreground">um milhão de reais em sete dias</strong> com estratégias digitais.
+                Edânio Costa veio do marketing digital e já faturou diversas vezes mais de um milhão de reais em sete dias com estratégias digitais.
               </p>
               <p>
-                Atualmente, é um dos <strong className="text-primary">maiores especialistas do Brasil</strong> em inteligência artificial.
+                Atualmente, é um dos maiores especialistas do Brasil em inteligência artificial.
               </p>
               <p>
                 Focado em ajudar profissionais liberais, pequenos e médios empresários a usar isso a seu favor de forma simples, fácil e objetiva.
