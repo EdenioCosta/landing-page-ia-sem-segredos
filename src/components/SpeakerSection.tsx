@@ -11,15 +11,15 @@ const SpeakerSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="grid grid-cols-2 gap-4">
-            <img src={speakerSmile} alt="Edânio Costa" className="rounded-xl w-full h-72 object-cover object-top shadow-lg" />
-            <img src={speakerStage} alt="Edânio Costa no palco" className="rounded-xl w-full h-72 object-cover object-top shadow-lg" />
+            <img src={speakerSmile} alt="Edenio Costa" className="rounded-xl w-full h-72 object-cover object-top shadow-lg" />
+            <img src={speakerStage} alt="Edenio Costa no palco" className="rounded-xl w-full h-72 object-cover object-top shadow-lg" />
           </div>
 
           <div className="space-y-6">
-            <h3 className="text-3xl md:text-4xl font-black">Edânio Costa</h3>
+            <h3 className="text-3xl md:text-4xl font-black">Edenio Costa</h3>
             <div className="space-y-4 text-foreground text-lg leading-relaxed text-left">
               <p>
-                Edânio Costa veio do marketing digital e já faturou diversas vezes mais de um milhão de reais em sete dias com estratégias digitais.
+                Edenio Costa veio do marketing digital e já faturou diversas vezes mais de um milhão de reais em sete dias com estratégias digitais.
               </p>
               <p>
                 Atualmente, é um dos maiores especialistas do Brasil em inteligência artificial.
