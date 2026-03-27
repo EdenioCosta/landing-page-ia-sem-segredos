@@ -32,10 +32,12 @@ const ProblemSection = () => {
               "Te ajuda a atrair mais clientes",
               "Pode cuidar das suas redes sociais",
               "Pode fazer um site pra você",
-              "Pode ser seu conselheiro",
-              "Pode cuidar do seu marketing",
-              "Pode ser seu secretário",
-              "Pode ser seu vendedor",
+              "Pode ser seu melhor vendedor",
+              "Pode ser sua melhor secretária",
+              "Pode criar todo um plano de crescimento da sua empresa em detalhes",
+              "Pode criar toda uma estratégia de marketing pra você, mesmo que você seja pequeno ainda",
+              "Pode montar todo o seu plano de crescimento",
+              "Pode executar tudo isso para você — fazer o trabalho braçal mesmo",
               "E muito mais…",
             ].map((item) => (
               <div key={item} className="flex items-start gap-3 p-3 rounded-lg bg-secondary/50">
