@@ -46,9 +46,12 @@ const HeroSection = () => {
         </div>
 
         {/* Registration form */}
-        <div className="mt-8 mb-16 w-full max-w-md px-6">
+        <div className="mt-8 w-full max-w-md px-6">
           <RegistrationForm />
         </div>
+        <p className="text-foreground text-base md:text-lg max-w-md px-6 mt-4 mb-16 text-center">
+          <span className="font-bold">Atenção:</span> por ser um workshop gratuito, as vagas esgotam muito rápido e são muito concorridas. Então não deixe pra depois.
+        </p>
       </div>
     </section>
   );
