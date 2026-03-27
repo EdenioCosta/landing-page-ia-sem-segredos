@@ -1,5 +1,4 @@
-import speakerStage from "@/assets/speaker-stage.jpeg";
-import speakerSmile from "@/assets/speaker-smile.png";
+import speakerTrainer from "@/assets/speaker-trainer.jpeg";
 
 const SpeakerSection = () => {
   return (
@@ -10,9 +9,8 @@ const SpeakerSection = () => {
         </h2>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="grid grid-cols-2 gap-4">
-            <img src={speakerSmile} alt="Edenio Costa" className="rounded-xl w-full h-72 object-cover object-top shadow-lg" />
-            <img src={speakerStage} alt="Edenio Costa no palco" className="rounded-xl w-full h-72 object-cover object-top shadow-lg" />
+          <div className="flex justify-center">
+            <img src={speakerTrainer} alt="Edenio Costa" className="rounded-2xl w-full max-w-sm object-cover object-top shadow-lg" />
           </div>
 
           <div className="space-y-6">
