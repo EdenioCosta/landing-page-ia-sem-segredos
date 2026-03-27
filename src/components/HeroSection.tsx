@@ -54,10 +54,10 @@ const HeroSection = () => {
         {/* Headline */}
         <div className="px-6 max-w-3xl space-y-5 -mt-16 md:-mt-24">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.08] tracking-tight uppercase">
-            DESCUBRA COMO ATRAIR MAIS CLIENTES E CRESCER SEU NEGÓCIO COM A{" "}
+            DESCUBRA COMO ATRAIR MAIS CLIENTES E FATURAR MAIS ATRAVÉS DA{" "}
             <span className="text-gradient">INTELIGÊNCIA ARTIFICIAL</span>
           </h1>
-          <p className="text-muted-foreground text-base md:text-lg">
+          <p className="text-muted-foreground text-lg md:text-xl lg:text-2xl">
             Para profissionais liberais, pequenos e médios empresários.
           </p>
         </div>
