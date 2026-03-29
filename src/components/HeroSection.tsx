@@ -35,7 +35,7 @@ const HeroSection = () => {
         </div>
 
         {/* Headline */}
-        <div className="px-6 max-w-3xl space-y-5 -mt-16 md:-mt-24">
+        <div className="relative z-20 px-6 max-w-3xl space-y-5 -mt-16 md:-mt-24">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.08] tracking-tight uppercase">
             DESCUBRA COMO ATRAIR MAIS CLIENTES COM{" "}
             <span className="text-gradient">INTELIGÊNCIA ARTIFICIAL</span>
