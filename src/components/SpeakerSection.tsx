@@ -10,7 +10,7 @@ const SpeakerSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center">
-            <img src={speakerTrainer} alt="Edenio Costa" className="rounded-2xl w-full max-w-sm object-cover object-top shadow-lg" />
+            <img src={speakerTrainer} alt="Edenio Costa" loading="lazy" width={400} height={500} className="rounded-2xl w-full max-w-sm object-cover object-top shadow-lg" />
           </div>
 
           <div className="space-y-6">

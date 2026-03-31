@@ -22,6 +22,9 @@ const SocialProofSection = () => {
               key={i}
               src={src}
               alt={`Workshop Edenio Costa - Evento ${i + 1}`}
+              loading="lazy"
+              width={800}
+              height={450}
               className="w-full rounded-xl object-cover"
             />
           ))}

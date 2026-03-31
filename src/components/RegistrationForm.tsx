@@ -46,26 +46,44 @@ const RegistrationForm = () => {
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-4">
-        <Input
-          placeholder="Seu nome completo"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          className="bg-secondary/80 border-border h-12 text-foreground placeholder:text-muted-foreground"
-        />
-        <Input
-          type="email"
-          placeholder="Seu melhor e-mail"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="bg-secondary/80 border-border h-12 text-foreground placeholder:text-muted-foreground"
-        />
-        <Input
-          type="tel"
-          placeholder="Seu WhatsApp (com DDD)"
-          value={whatsapp}
-          onChange={(e) => setWhatsapp(e.target.value)}
-          className="bg-secondary/80 border-border h-12 text-foreground placeholder:text-muted-foreground"
-        />
+        <div>
+          <label htmlFor="name" className="sr-only">Nome completo</label>
+          <Input
+            id="name"
+            placeholder="Seu nome completo"
+            autoComplete="name"
+            aria-required="true"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="bg-secondary/80 border-border h-12 text-foreground placeholder:text-muted-foreground"
+          />
+        </div>
+        <div>
+          <label htmlFor="email" className="sr-only">E-mail</label>
+          <Input
+            id="email"
+            type="email"
+            placeholder="Seu melhor e-mail"
+            autoComplete="email"
+            aria-required="true"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="bg-secondary/80 border-border h-12 text-foreground placeholder:text-muted-foreground"
+          />
+        </div>
+        <div>
+          <label htmlFor="whatsapp" className="sr-only">WhatsApp</label>
+          <Input
+            id="whatsapp"
+            type="tel"
+            placeholder="Seu WhatsApp (com DDD)"
+            autoComplete="tel"
+            aria-required="true"
+            value={whatsapp}
+            onChange={(e) => setWhatsapp(e.target.value)}
+            className="bg-secondary/80 border-border h-12 text-foreground placeholder:text-muted-foreground"
+          />
+        </div>
         <Button
           type="submit"
           disabled={loading}
