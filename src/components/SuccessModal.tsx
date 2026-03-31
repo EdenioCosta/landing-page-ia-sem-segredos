@@ -38,7 +38,7 @@ const SuccessModal = ({ onClose }: { onClose: () => void }) => {
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       {/* Backdrop */}
       <div
-        className="absolute inset-0 bg-black/70 backdrop-blur-sm"
+        className="absolute inset-0 bg-black/60 backdrop-blur-md"
         onClick={onClose}
       />
 
@@ -106,6 +106,14 @@ const SuccessModal = ({ onClose }: { onClose: () => void }) => {
         <p className="text-muted-foreground text-xs">
           Clique acima para adicionar o evento ao seu Google Agenda
         </p>
+
+        {/* Close / back button */}
+        <button
+          onClick={onClose}
+          className="text-muted-foreground hover:text-foreground text-sm underline underline-offset-4 transition-colors"
+        >
+          Fechar e voltar ao site
+        </button>
       </div>
     </div>
   );
