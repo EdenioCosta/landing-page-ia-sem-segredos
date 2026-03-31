@@ -1,3 +1,5 @@
+import AnimateOnScroll from "@/components/AnimateOnScroll";
+
 const reasons = [
   { title: "Você não precisa saber nada de inteligência artificial", desc: "Você vai aprender de forma simples, prática e direta" },
   { title: "É um treinamento pensado para quem não tem tempo a perder", desc: "Sem linguagem técnica, sem complicação" },
@@ -10,20 +12,24 @@ const ReasonsSection = () => {
   return (
     <section className="py-24 px-6">
       <div className="container mx-auto max-w-4xl">
-        <h2 className="text-3xl md:text-5xl font-black tracking-tight text-center mb-16">
-          5 MOTIVOS PARA VOCÊ{" "}
-          <span className="text-gradient">PARTICIPAR DESSE WORKSHOP</span>
-        </h2>
+        <AnimateOnScroll>
+          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-center mb-16">
+            5 MOTIVOS PARA VOCÊ{" "}
+            <span className="text-gradient">PARTICIPAR DESSE WORKSHOP</span>
+          </h2>
+        </AnimateOnScroll>
 
         <div className="space-y-6">
           {reasons.map((r, i) => (
-            <div key={i} className="flex gap-6 items-start p-6 rounded-xl border border-border bg-card hover:border-primary/40 transition-colors duration-300" style={{ boxShadow: 'var(--shadow-card)' }}>
-              <span className="text-4xl font-black text-primary shrink-0">{i + 1}</span>
-              <div className="text-left">
-                <h3 className="text-lg md:text-xl font-bold text-foreground">{r.title}</h3>
-                <p className="text-muted-foreground mt-1">{r.desc}</p>
+            <AnimateOnScroll key={i}>
+              <div className="flex gap-6 items-start p-6 rounded-xl border border-border bg-card/60 backdrop-blur-sm hover:border-primary/40 transition-colors duration-300">
+                <span className="text-4xl font-black text-primary shrink-0">{i + 1}</span>
+                <div className="text-left">
+                  <h3 className="text-lg md:text-xl font-bold text-foreground">{r.title}</h3>
+                  <p className="text-muted-foreground mt-1">{r.desc}</p>
+                </div>
               </div>
-            </div>
+            </AnimateOnScroll>
           ))}
         </div>
       </div>

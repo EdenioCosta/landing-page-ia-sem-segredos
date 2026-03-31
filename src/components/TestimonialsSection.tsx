@@ -1,3 +1,5 @@
+import AnimateOnScroll from "@/components/AnimateOnScroll";
+
 const testimonials = [
   {
     name: "Carla Mendes",
@@ -30,25 +32,26 @@ const TestimonialsSection = () => {
   return (
     <section className="py-24 px-6 bg-card/50">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-5xl font-black tracking-tight text-center mb-4">
-          O QUE DIZEM <span className="text-gradient">QUEM JÁ PARTICIPOU</span>
-        </h2>
-        <p className="text-muted-foreground text-center text-lg mb-16">
-          Veja o que empresários e profissionais estão falando
-        </p>
+        <AnimateOnScroll>
+          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-center mb-4">
+            O QUE DIZEM <span className="text-gradient">QUEM JÁ PARTICIPOU</span>
+          </h2>
+          <p className="text-muted-foreground text-center text-lg mb-16">
+            Veja o que empresários e profissionais estão falando
+          </p>
+        </AnimateOnScroll>
 
         <div className="space-y-6">
           {testimonials.map((t, i) => (
-            <div
-              key={i}
-              className="bg-secondary/50 border border-border rounded-2xl p-6 md:p-8"
-            >
-              <p className="text-foreground text-base md:text-lg leading-relaxed mb-3 text-left">
-                "{t.text}"
-              </p>
-              <p className="font-bold text-foreground">{t.name}</p>
-              <p className="text-sm text-muted-foreground">{t.role}</p>
-            </div>
+            <AnimateOnScroll key={i}>
+              <div className="p-6 md:p-8 rounded-xl border border-border bg-card/60 backdrop-blur-sm hover:border-primary/40 transition-colors duration-300">
+                <p className="text-foreground text-base md:text-lg leading-relaxed mb-3 text-left">
+                  "{t.text}"
+                </p>
+                <p className="font-bold text-foreground">{t.name}</p>
+                <p className="text-sm text-muted-foreground">{t.role}</p>
+              </div>
+            </AnimateOnScroll>
           ))}
         </div>
       </div>
