@@ -3,12 +3,14 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/lib/supabase";
+import SuccessModal from "@/components/SuccessModal";
 
 const RegistrationForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [whatsapp, setWhatsapp] = useState("");
   const [loading, setLoading] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -27,7 +29,7 @@ const RegistrationForm = () => {
       toast({ title: "Erro ao enviar inscrição. Tente novamente.", variant: "destructive" });
       return;
     }
-    toast({ title: "Inscrição realizada com sucesso!" });
+    setShowSuccess(true);
     setName("");
     setEmail("");
     setWhatsapp("");
@@ -101,6 +103,8 @@ const RegistrationForm = () => {
           {loading ? "Enviando..." : "FAZER INSCRIÇÃO GRATUITA"}
         </Button>
       </form>
+
+      {showSuccess && <SuccessModal onClose={() => setShowSuccess(false)} />}
     </div>
   );
 };
