@@ -1,7 +1,7 @@
-import eventAudience1 from "@/assets/event-audience-1.jpeg";
-import eventSpeaker1 from "@/assets/event-speaker-1.jpeg";
-import eventAudience2 from "@/assets/event-audience-2.jpeg";
-import eventSpeaker2 from "@/assets/event-speaker-2.jpeg";
+import eventAudience1 from "@/assets/event-audience-1.webp";
+import eventSpeaker1 from "@/assets/event-speaker-1.webp";
+import eventAudience2 from "@/assets/event-audience-2.webp";
+import eventSpeaker2 from "@/assets/event-speaker-2.webp";
 
 const SocialProofSection = () => {
   const cities = ["RIO DE JANEIRO", "BELO HORIZONTE", "BRASÍLIA", "GOIÁS", "SÃO PAULO", "CURITIBA", "FLORIANÓPOLIS"];

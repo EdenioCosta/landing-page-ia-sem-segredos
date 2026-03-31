@@ -1,4 +1,4 @@
-import speakerHero from "@/assets/speaker-hero.png";
+import speakerHero from "@/assets/speaker-hero.webp";
 import RegistrationForm from "@/components/RegistrationForm";
 
 const HeroSection = () => {

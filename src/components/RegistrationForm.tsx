@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { toast } from "@/hooks/use-toast";
+import { supabase } from "@/lib/supabase";
 
 const RegistrationForm = () => {
   const [name, setName] = useState("");
@@ -9,24 +10,31 @@ const RegistrationForm = () => {
   const [whatsapp, setWhatsapp] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name || !email || !whatsapp) {
       toast({ title: "Preencha todos os campos", variant: "destructive" });
       return;
     }
     setLoading(true);
-    setTimeout(() => {
-      toast({ title: "Inscrição realizada com sucesso! 🎉" });
-      setName("");
-      setEmail("");
-      setWhatsapp("");
-      setLoading(false);
-    }, 1000);
+    const { error } = await supabase.from("inscricoes").insert({
+      nome: name,
+      email,
+      whatsapp,
+    });
+    setLoading(false);
+    if (error) {
+      toast({ title: "Erro ao enviar inscrição. Tente novamente.", variant: "destructive" });
+      return;
+    }
+    toast({ title: "Inscrição realizada com sucesso!" });
+    setName("");
+    setEmail("");
+    setWhatsapp("");
   };
 
   return (
-    <div className="bg-card/80 border border-border rounded-2xl p-6 md:p-8 backdrop-blur-sm">
+    <div className="bg-card/80 border border-border rounded-2xl p-4 md:p-8 backdrop-blur-sm">
       <h3 className="text-2xl md:text-3xl font-black mb-1 uppercase tracking-tight leading-tight">
         Workshop{" "}
         <br />
@@ -87,7 +95,7 @@ const RegistrationForm = () => {
         <Button
           type="submit"
           disabled={loading}
-          className="w-full h-12 font-black text-base uppercase tracking-wide text-primary-foreground glow-border"
+          className="w-full h-12 font-black text-sm md:text-base uppercase tracking-wide text-primary-foreground glow-border"
           style={{ backgroundImage: 'var(--gradient-glow)' }}
         >
           {loading ? "Enviando..." : "FAZER INSCRIÇÃO GRATUITA"}

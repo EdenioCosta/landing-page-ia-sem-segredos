@@ -1,4 +1,4 @@
-import speakerTrainer from "@/assets/speaker-trainer.jpeg";
+import speakerTrainer from "@/assets/speaker-trainer.webp";
 
 const SpeakerSection = () => {
   return (
