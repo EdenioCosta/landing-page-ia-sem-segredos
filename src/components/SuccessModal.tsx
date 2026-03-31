@@ -1,3 +1,4 @@
+import { createPortal } from "react-dom";
 import { CalendarPlus, CheckCircle, MapPin, Clock, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -34,7 +35,7 @@ function formatDate(dateStr: string) {
 }
 
 const SuccessModal = ({ onClose }: { onClose: () => void }) => {
-  return (
+  return createPortal(
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       {/* Backdrop */}
       <div
@@ -115,7 +116,8 @@ const SuccessModal = ({ onClose }: { onClose: () => void }) => {
           Fechar e voltar ao site
         </button>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };
 
