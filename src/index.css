@@ -76,6 +76,25 @@
 
   .glow-border {
     box-shadow: var(--shadow-glow);
+    transition: transform 0.2s ease, box-shadow 0.3s ease, brightness 0.2s ease;
+  }
+
+  .glow-border:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 0 60px hsl(145 72% 45% / 0.25);
+  }
+
+  .glow-border:active:not(:disabled) {
+    transform: translateY(0) scale(0.98);
+  }
+
+  .glow-border.submitting {
+    animation: pulse-glow 1s ease-in-out infinite;
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 40px hsl(145 72% 45% / 0.15); }
+    50% { box-shadow: 0 0 70px hsl(145 72% 45% / 0.35); }
   }
 
   .section-divider {

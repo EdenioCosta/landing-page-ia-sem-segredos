@@ -95,7 +95,7 @@ const RegistrationForm = () => {
         <Button
           type="submit"
           disabled={loading}
-          className="w-full h-12 font-black text-sm md:text-base uppercase tracking-wide text-primary-foreground glow-border"
+          className={`w-full h-12 font-black text-sm md:text-base uppercase tracking-wide text-primary-foreground glow-border ${loading ? "submitting" : ""}`}
           style={{ backgroundImage: 'var(--gradient-glow)' }}
         >
           {loading ? "Enviando..." : "FAZER INSCRIÇÃO GRATUITA"}
