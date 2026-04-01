@@ -19,16 +19,26 @@ const RegistrationForm = () => {
       return;
     }
     setLoading(true);
+
+    // 1. Save to Supabase
     const { error } = await supabase.from("inscricoes").insert({
       nome: name,
       email,
       whatsapp,
     });
-    setLoading(false);
+
     if (error) {
+      setLoading(false);
       toast({ title: "Erro ao enviar inscrição. Tente novamente.", variant: "destructive" });
       return;
     }
+
+    // 2. Create lead in Kommo (non-blocking)
+    supabase.functions.invoke("create-kommo-lead", {
+      body: { nome: name, email, whatsapp },
+    });
+
+    setLoading(false);
     setShowSuccess(true);
     setName("");
     setEmail("");
