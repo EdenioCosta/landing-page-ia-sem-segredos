@@ -1,11 +1,9 @@
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 const reasons = [
-  { title: "Você não precisa saber nada de inteligência artificial", desc: "Você vai aprender de forma simples, prática e direta" },
-  { title: "É um treinamento pensado para quem não tem tempo a perder", desc: "Sem linguagem técnica, sem complicação" },
-  { title: "Você vai entender como aplicar isso no seu negócio de verdade", desc: "Não é teoria, é uso prático" },
-  { title: "Você vai enxergar novas possibilidades de crescimento", desc: "E perceber que está mais próximo do que imagina" },
-  { title: "Você pode sair desse workshop com uma nova forma de trabalhar", desc: "Mais leve, mais eficiente e com mais resultado" },
+  "Para você que sente que está perdendo muitas oportunidades por não saber aplicar a inteligência artificial no seu negócio.",
+  "Para você que ouve muito sobre inteligência artificial, mas ainda está tudo confuso e não conseguiu visualizar como usar isso na prática.",
+  "Para você que não conhece inteligência artificial ou só faz perguntas para o ChatGPT, o que representa quase nada do que ela realmente pode fazer por você.",
 ];
 
 const ReasonsSection = () => {
@@ -14,20 +12,17 @@ const ReasonsSection = () => {
       <div className="container mx-auto max-w-4xl">
         <AnimateOnScroll>
           <h2 className="text-3xl md:text-5xl font-black tracking-tight text-center mb-16">
-            5 MOTIVOS PARA VOCÊ{" "}
-            <span className="text-gradient">PARTICIPAR DESSE WORKSHOP</span>
+            3 MOTIVOS PARA VOCÊ{" "}
+            <span className="text-gradient">PARTICIPAR</span>
           </h2>
         </AnimateOnScroll>
 
         <div className="space-y-6">
-          {reasons.map((r, i) => (
+          {reasons.map((text, i) => (
             <AnimateOnScroll key={i}>
               <div className="flex gap-6 items-start p-6 rounded-xl border border-border bg-card/60 backdrop-blur-sm hover:border-primary/40 transition-colors duration-300">
                 <span className="text-4xl font-black text-primary shrink-0">{i + 1}</span>
-                <div className="text-left">
-                  <h3 className="text-lg md:text-xl font-bold text-foreground">{r.title}</h3>
-                  <p className="text-muted-foreground mt-1">{r.desc}</p>
-                </div>
+                <p className="text-foreground text-lg md:text-xl text-left leading-relaxed">{text}</p>
               </div>
             </AnimateOnScroll>
           ))}

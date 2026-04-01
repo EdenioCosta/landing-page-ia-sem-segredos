@@ -35,20 +35,25 @@ const ProblemSection = () => {
               {[
                 "Te ajuda a vender mais",
                 "Te ajuda a atrair mais clientes",
-                "Pode cuidar das suas redes sociais",
-                "Pode fazer um site pra você",
-                "Pode ser seu melhor vendedor",
-                "Pode ser sua melhor secretária",
-                "Pode criar todo um plano de crescimento da sua empresa em detalhes",
-                "Pode criar toda uma estratégia de marketing pra você, mesmo que você seja pequeno ainda",
-                "Pode executar tudo isso para você — fazer o trabalho braçal mesmo",
-                "E muito mais…",
+                "Otimiza demais o seu tempo pra aumentar sua qualidade de vida",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3 p-4 rounded-xl border border-border bg-card/60 backdrop-blur-sm hover:border-primary/40 transition-colors duration-300">
                   <span className="text-primary mt-0.5">✦</span>
                   <span className="text-foreground">{item}</span>
                 </div>
               ))}
+            </div>
+
+            <div className="text-center max-w-2xl mx-auto space-y-2">
+              <p className="text-foreground text-xl md:text-2xl font-black uppercase">
+                VOCÊ SIMPLESMENTE NÃO PODE DEIXAR ISSO DE LADO.
+              </p>
+              <p className="text-foreground text-xl md:text-2xl font-black uppercase">
+                VOCÊ PRECISA APRENDER INTELIGÊNCIA ARTIFICIAL.
+              </p>
+              <p className="text-gradient text-2xl md:text-3xl font-black uppercase">
+                PARTICIPE.
+              </p>
             </div>
           </div>
         </AnimateOnScroll>
