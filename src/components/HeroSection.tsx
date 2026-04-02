@@ -23,6 +23,11 @@ const HeroSection = () => {
 
         {/* Speaker image */}
         <div className="relative w-full flex justify-center">
+          {/* Green neon glow behind photo */}
+          <div
+            className="absolute w-[280px] md:w-[400px] lg:w-[460px] aspect-square rounded-full opacity-30 blur-3xl"
+            style={{ background: 'radial-gradient(circle, hsl(145 72% 50%), transparent 70%)' }}
+          />
           <img
             src={speakerHero}
             alt="Edenio Costa - Especialista em Inteligência Artificial"
