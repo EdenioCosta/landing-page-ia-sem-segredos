@@ -21,28 +21,19 @@ const HeroSection = () => {
           </h2>
         </div>
 
-        {/* Speaker image */}
-        <div className="relative w-full flex justify-center">
-          {/* Green neon glow behind photo */}
-          <div
-            className="absolute w-[280px] md:w-[400px] lg:w-[460px] aspect-square rounded-full opacity-30 blur-3xl"
-            style={{ background: 'radial-gradient(circle, hsl(145 72% 50%), transparent 70%)' }}
-          />
+        {/* Event image */}
+        <div className="relative w-full flex justify-center px-4 mt-4">
           <img
             src={speakerHero}
-            alt="Edenio Costa - Especialista em Inteligência Artificial"
-            width={520}
-            height={600}
-            className="relative w-[320px] md:w-[450px] lg:w-[520px] max-w-full object-cover object-top"
-            style={{
-              maskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)',
-              WebkitMaskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)',
-            }}
+            alt="Workshop IA Sem Segredos - Evento lotado"
+            width={1200}
+            height={704}
+            className="relative w-full max-w-4xl rounded-xl object-cover"
           />
         </div>
 
         {/* Headline */}
-        <div className="relative z-20 px-6 max-w-3xl space-y-5 -mt-16 md:-mt-24">
+        <div className="relative z-20 px-6 max-w-3xl space-y-5 mt-8">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.08] tracking-tight uppercase">
             DESCUBRA COMO ATRAIR MAIS CLIENTES COM{" "}
             <span className="text-gradient">INTELIGÊNCIA ARTIFICIAL</span>
