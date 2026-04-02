@@ -5,6 +5,13 @@ import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/lib/supabase";
 import SuccessModal from "@/components/SuccessModal";
 
+function toE164(phone: string): string {
+  const digits = phone.replace(/\D/g, "");
+  if (digits.startsWith("55") && digits.length >= 12) return "+" + digits;
+  if (digits.length === 10 || digits.length === 11) return "+55" + digits;
+  return "+" + digits;
+}
+
 const RegistrationForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -20,11 +27,13 @@ const RegistrationForm = () => {
     }
     setLoading(true);
 
+    const phoneE164 = toE164(whatsapp);
+
     // 1. Save to Supabase
     const { error } = await supabase.from("inscricoes").insert({
       nome: name,
       email,
-      whatsapp,
+      whatsapp: phoneE164,
     });
 
     if (error) {
@@ -35,7 +44,7 @@ const RegistrationForm = () => {
 
     // 2. Create lead in Kommo (non-blocking)
     supabase.functions.invoke("create-kommo-lead", {
-      body: { nome: name, email, whatsapp },
+      body: { nome: name, email, whatsapp: phoneE164 },
     });
 
     setLoading(false);
