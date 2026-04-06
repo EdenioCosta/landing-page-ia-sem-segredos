@@ -21,11 +21,9 @@ const HeroSection = () => {
           className="w-full object-cover max-h-[55vh] md:max-h-[60vh]"
         />
         {/* Top gradient: dark → transparent */}
-        <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-background to-transparent" />
+        <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-background to-transparent" />
         {/* Bottom gradient: transparent → dark */}
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background to-transparent" />
-        {/* Subtle overall darkening */}
-        <div className="absolute inset-0 bg-background/30" />
+        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-background to-transparent" />
       </div>
 
       {/* Content below image */}
