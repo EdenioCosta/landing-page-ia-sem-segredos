@@ -7,7 +7,7 @@ const ProblemSection = () => {
         {/* Block 1 */}
         <AnimateOnScroll>
           <div className="space-y-6">
-            <h2 className="text-2xl md:text-5xl lg:text-6xl font-black tracking-tight text-center">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-black tracking-tight text-center">
               CHEGA DE CONFUSÃO, APRENDA DE FORMA{" "}
               <span className="text-gradient">SIMPLES E FÁCIL</span>
             </h2>
@@ -27,7 +27,7 @@ const ProblemSection = () => {
         {/* Block 2 */}
         <AnimateOnScroll>
           <div className="space-y-8">
-            <h2 className="text-2xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-center">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-black tracking-tight leading-tight text-center">
               MAS AFINAL, O QUE A INTELIGÊNCIA ARTIFICIAL{" "}
               <span className="text-gradient">PODE FAZER POR VOCÊ?</span>
             </h2>

@@ -30,7 +30,7 @@ const HeroSection = () => {
       <div className="relative z-10 flex flex-col items-center text-center w-full -mt-8">
         {/* Headline */}
         <div className="px-6 max-w-3xl space-y-5">
-          <h1 className="text-2xl md:text-5xl lg:text-6xl font-black leading-[1.12] tracking-tight uppercase">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-black leading-[1.12] tracking-tight uppercase">
             DESCUBRA COMO ATRAIR MAIS CLIENTES COM{" "}
             <span className="text-gradient">INTELIGÊNCIA ARTIFICIAL</span>
           </h1>

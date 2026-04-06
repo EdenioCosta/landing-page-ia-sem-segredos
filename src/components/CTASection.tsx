@@ -11,7 +11,7 @@ const CTASection = () => {
 
       <div className="container relative z-10 mx-auto max-w-3xl text-center space-y-8">
         <AnimateOnScroll>
-          <h2 className="text-2xl md:text-5xl lg:text-6xl font-black tracking-tight">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-black tracking-tight">
             GARANTA SUA VAGA <span className="text-gradient">AGORA</span>
           </h2>
           <p className="text-muted-foreground text-lg md:text-xl max-w-xl mx-auto mt-4">
