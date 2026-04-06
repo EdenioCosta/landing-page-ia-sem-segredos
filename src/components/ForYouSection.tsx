@@ -12,7 +12,7 @@ const ForYouSection = () => {
     <section className="py-24 px-6">
       <div className="container mx-auto max-w-4xl space-y-12">
         <AnimateOnScroll>
-          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-center">
+          <h2 className="text-2xl md:text-5xl lg:text-6xl font-black tracking-tight text-center">
             <span className="text-gradient">PARA QUEM É</span>
           </h2>
         </AnimateOnScroll>

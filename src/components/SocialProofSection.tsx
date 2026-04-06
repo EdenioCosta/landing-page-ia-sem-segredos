@@ -11,7 +11,7 @@ const SocialProofSection = () => {
     <section className="py-16 px-6 relative overflow-hidden">
       <div className="container mx-auto max-w-3xl space-y-10">
         <AnimateOnScroll>
-          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-center uppercase">
+          <h2 className="text-2xl md:text-5xl lg:text-6xl font-black tracking-tight text-center uppercase">
             Workshop que conquistou o{" "}
             <span className="text-gradient">Brasil</span>
           </h2>

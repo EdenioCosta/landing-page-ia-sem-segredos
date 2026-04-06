@@ -6,7 +6,7 @@ const SpeakerSection = () => {
     <section className="py-24 px-6 bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <AnimateOnScroll>
-          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-center mb-16">
+          <h2 className="text-2xl md:text-5xl lg:text-6xl font-black tracking-tight text-center mb-16">
             QUEM SERÁ <span className="text-gradient">SEU TREINADOR</span>
           </h2>
         </AnimateOnScroll>

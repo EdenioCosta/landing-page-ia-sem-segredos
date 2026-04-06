@@ -33,7 +33,7 @@ const TestimonialsSection = () => {
     <section className="py-24 px-6 bg-card/50">
       <div className="container mx-auto max-w-5xl">
         <AnimateOnScroll>
-          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-center mb-4">
+          <h2 className="text-2xl md:text-5xl lg:text-6xl font-black tracking-tight text-center mb-4">
             O QUE DIZEM <span className="text-gradient">QUEM JÁ PARTICIPOU</span>
           </h2>
           <p className="text-muted-foreground text-center text-lg mb-16">

@@ -11,7 +11,7 @@ const ReasonsSection = () => {
     <section className="py-24 px-6">
       <div className="container mx-auto max-w-4xl">
         <AnimateOnScroll>
-          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-center mb-16">
+          <h2 className="text-2xl md:text-5xl lg:text-6xl font-black tracking-tight text-center mb-16">
             3 MOTIVOS PARA VOCÊ{" "}
             <span className="text-gradient">PARTICIPAR</span>
           </h2>

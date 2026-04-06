@@ -2,7 +2,7 @@ const UrgencySection = () => {
   return (
     <section className="py-24 px-6 bg-secondary/30">
       <div className="container mx-auto max-w-4xl space-y-8">
-        <h2 className="text-3xl md:text-5xl font-black tracking-tight text-center">
+        <h2 className="text-2xl md:text-5xl lg:text-6xl font-black tracking-tight text-center">
           OU VOCÊ APRENDE ISSO AGORA{" "}
           <span className="text-accent">OU VAI FICAR MUITO PRA TRÁS</span>
         </h2>
@@ -19,7 +19,7 @@ const UrgencySection = () => {
         <div className="section-divider mt-16" />
 
         <div className="pt-12 space-y-8">
-          <h2 className="text-3xl md:text-4xl font-black tracking-tight text-center">
+          <h2 className="text-2xl md:text-5xl lg:text-6xl font-black tracking-tight text-center">
             VOCÊ VAI VER DIANTE DOS SEUS OLHOS{" "}
             <span className="text-gradient">O QUE É REALMENTE POSSÍVEL</span>
           </h2>
